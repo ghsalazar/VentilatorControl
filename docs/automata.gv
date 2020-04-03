@@ -1,0 +1,11 @@
+digraph automata {
+	layout="circo";
+
+	S0 [shape=none, label=""];
+	
+	S0 -> S1 [label="/Timer1"];
+	S1 -> S2 [label="Timer1/Timer2"];
+	S2 -> S3 [label="Timer2/Timer1"];
+	S3 -> S4 [label="Timer1/Timer2"];
+	S4 -> S1 [label="Timer2/Timer1"];
+}
